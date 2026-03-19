@@ -3,7 +3,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
 
 print("Lese die sauberen Date . . .")
-df=pd.read_csv("/Users/boraa/Desktop/dw_project/dw_articles_clean.csv")
+df=pd.read_csv("dw_articles_clean.csv")
 df=df.dropna(subset=['Cleaned_Content'])
 
 print("Text wird in Zahlen umgewandelt (TD-IDF). . .")

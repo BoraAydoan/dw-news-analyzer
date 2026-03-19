@@ -12,7 +12,7 @@ st.write("Diese App zeigt  die neuesten Artikel von Deutsche Welle, die durch" \
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("/Users/boraa/Desktop/dw_project/dw_articles_clustered.csv")
+    return pd.read_csv("dw_articles_clustered.csv")
 
 df=load_data()
 
