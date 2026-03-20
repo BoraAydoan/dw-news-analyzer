@@ -5,7 +5,7 @@ import pandas as pd
 
 st.title("Dw Nachrichten Analysator")
 st.write("Diese App zeigt  die neuesten Artikel von Deutsche Welle, die durch " \
-"Künstliche Intelligenz automatisch in Themen gruppier wurden.")
+"Künstliche Intelligenz automatisch in Themen gruppiert wurden.")
   
 
 #Data laden(mit Catche, damit es schnell bleibt)
