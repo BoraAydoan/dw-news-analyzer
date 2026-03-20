@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud
 #Titel und Beschreibung der Webseite
 
 st.title("Dw Nachrichten Analysator")
@@ -61,3 +62,27 @@ st.dataframe(
 )
 
 st.table(filtered_df[['Title']])
+
+st.divider()
+
+st.subheader("☁️ Wortwolke")
+st.write(f"Die wichtigsten Wörter für **{selected_name}**:")
+'''
+Alle bereinigten TExte des ausgewählten Clusters zu einem großen Text 
+zusammenfügen
+'''
+text=" ".join(filtered_df['Cleaned_Content'].astype(str))
+
+#Wenn der Text leer ist, zeichnen wir die Wortwolke
+
+if len(text.strip())>0:
+    wordcloud = WordCloud(width=800, height=400, background_color="white", colormap="viridis").generate(text)
+
+    #Das Bild mit Matplotlib auf dem Streamlit-Bildschrim anzeigen
+    fig, ax= plt.subploats(figsize=(10,5))
+    ax.imshow(wordcloud, interpolation='bilinear')
+    ax.axis("off")#Die Anschenlinien an den Rändern ausblenden
+    st.pyplot(fig)
+
+else:
+    st.info("Für dieses Cluster gibt es nicht genug Text.")
