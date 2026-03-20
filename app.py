@@ -85,4 +85,4 @@ if len(text.strip())>0:
     st.pyplot(fig)
 
 else:
-    st.info("Für dieses Cluster gibt es nicht genug Text .")
+    st.info("Für dieses Cluster gibt es nicht genug Text.")
