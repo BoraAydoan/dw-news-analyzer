@@ -4,8 +4,8 @@ import pandas as pd
 #Titel und Beschreibung der Webseite
 
 st.title("Dw Nachrichten Analysator")
-st.write("Diese App zeigt  die neuesten Artikel von Deutsche Welle, die durch" \
-"Kübstliche Intelligenz automatisch in Themen gruppier wurden.")
+st.write("Diese App zeigt  die neuesten Artikel von Deutsche Welle, die durch " \
+"Künstliche Intelligenz automatisch in Themen gruppier wurden.")
   
 
 #Data laden(mit Catche, damit es schnell bleibt)
