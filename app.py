@@ -79,7 +79,7 @@ if len(text.strip())>0:
     wordcloud = WordCloud(width=800, height=400, background_color="white", colormap="viridis").generate(text)
 
     #Das Bild mit Matplotlib auf dem Streamlit-Bildschrim anzeigen
-    fig, ax= plt.subploats(figsize=(10,5))
+    fig, ax= plt.subplots(figsize=(10,5))
     ax.imshow(wordcloud, interpolation='bilinear')
     ax.axis("off")#Die Anschenlinien an den Rändern ausblenden
     st.pyplot(fig)
