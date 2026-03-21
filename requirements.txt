@@ -4,7 +4,7 @@ beautifulsoup4
 lxml
 spacy
 scikit-learn
-streamlit
+streamlit streamlit>=1.35.0
 https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-3.7.0/de_core_news_sm-3.7.0-py3-none-any.whl
 wordcloud
 matplotlib
